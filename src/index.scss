@@ -1,0 +1,76 @@
+:root {
+  --mainBlue: #069ec6;
+  --lightBlue: #00b3c3;
+  --dark: #1f1f1f;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito Sans", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+  &:hover {
+    transition: all 0.2s ease-out;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.btn-main {
+  background-color: var(--mainBlue);
+  color: #ffffff;
+  border-radius: 10px;
+  transition: all 0.2s ease-in;
+  padding: 7px 15px;
+  border: none;
+  &:hover {
+    transition: all 0.2s ease-out;
+    background-color: var(--lightBlue);
+    color: var(--dark);
+  }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+form {
+  .input-group {
+    label {
+      font-weight: 600;
+    }
+    .form-control {
+      width: 100%;
+      transition: all 0.1s ease-in;
+      margin: 10px 0;
+      padding: 7px;
+      border-radius: 10px;
+      border: solid 1px var(--dark);
+      &:focus {
+        transition: all 0.1s ease-out;
+        border-color: var(--mainBlue);
+        outline: none;
+      }
+    }
+  }
+}

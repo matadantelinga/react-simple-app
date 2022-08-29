@@ -1,0 +1,108 @@
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @media only screen and (min-width: 576px) {
+    max-width: 540px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media only screen and (min-width: 992px) {
+    max-width: 960px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    max-width: 1140px;
+  }
+
+  @media only screen and (min-width: 1360px) {
+    max-width: 1280px;
+  }
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  @media (max-width: 767px) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.col-2 {
+  flex: 0 0 calc(100% / 12 * 2);
+  max-width: calc(100% / 12 * 2);
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    flex: 0 0 calc(100% / 12 * 4);
+    max-width: calc(100% / 12 * 4);
+  }
+}
+
+.col-6 {
+  flex: 0 0 calc(100% / 12 * 6);
+  max-width: calc(100% / 12 * 6);
+}
+
+.col-10 {
+  flex: 0 0 calc(100% / 12 * 10);
+  max-width: calc(100% / 12 * 10);
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    flex: 0 0 calc(100% / 12 * 8);
+    max-width: calc(100% / 12 * 8);
+  }
+}
+
+.col,
+.col-2,
+.col-6,
+.col-10 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  @media only screen and (max-width: 767px) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+// Use this so the column will have correct width
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.content-spacing {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.text-center {
+  text-align: center;
+}
